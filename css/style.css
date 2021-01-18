@@ -1,0 +1,25 @@
+h1{
+    font-weight: 300;
+    text-align: center;
+    color: cornflowerblue;
+
+}
+
+h2{
+    color: cornflowerblue;
+}
+
+main{
+    font-family: "Arial";
+}
+
+header{
+    padding: .5rem 0;
+}
+  
+section{
+    margin: .5rem 0;
+    padding: .5rem;
+    border: 1px solid gray;
+}
+

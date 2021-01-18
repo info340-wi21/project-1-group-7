@@ -1,5 +1,4 @@
-# Project 1
-# INFO 340 Section AC 
+# Project 1 - INFO 340 Section AC 
 
 This repository contains code for an interactive information web app, created for the _Client-Side Web Development_ course at the UW iSchool.
 It has been created by Angelina Lum, Shreya Raj & Faiza Hussain. 
