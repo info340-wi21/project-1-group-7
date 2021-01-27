@@ -5,32 +5,38 @@
   <meta name="author" content="Angelina Lum, Shreya Raj & Faiza Hussain">
   <meta name="description" content="Project 1: Draft (Static Mock-Up)">
   <title>Saftey Travel Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main_style.css">
+  
 
 </head>
 
 <body>
-  <header>
-    <h1>NAME OF WEBSITE</h1>
-  </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="#">Home</a>
+        <a class="nav-item nav-link" href="#">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="text-center text-white">Name of website</h1>
+      <div class="input-group searchbar">
+        <input type="text" class="form-control" placeholder="Search information here" aria-label="search">
+        <div class="input-group-append">
+          <button class="btn btnwhite" type="button">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <main>
-    <!-- Search form -->
-    <section>
-      <form class="search">
-        <label for="search">Search Bar:</label><br>
-        <select id="search" name="search">
-          <option value="default"> </option>
-          <option value="Australia">Australia</option>
-          <option value="Sweden">Sweden</option>
-          <option value="New Zealand">New Zealand</option>
-          <option value="Italy">Italy</option>
-          <option value="Netherlands">Netherlands</option>
-          <option value="France">France</option>
-        </select>
-      </form>
-      <br>
-    </section>
-
     <!-- Card 1 -->
     <div>
       <img src="img/australia.jpg" alt="View of Sydney">
