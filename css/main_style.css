@@ -14,6 +14,19 @@
     margin-top: 5%;
 }
 
+#logo {
+    width: 8em;
+    margin-left: 50px;
+}
+
+.website-title {
+    margin-top: 40px;
+}
+
+.navbar-nav {
+    margin-right: 50px;
+}
+
 .card-img {
     width: 100%;
     height: 240px;
@@ -27,6 +40,9 @@ img {
     color: #416788; 
 }
 
+.card-title {
+    padding-left: 10px;
+}
 .hover-card{
     margin: auto;
     padding: 3em;
@@ -40,4 +56,12 @@ img {
 
 .card-img:hover ~ .hover-card{
     display: block;
+}
+
+[class*="type"] {
+    color: #6E8387; 
+}
+
+footer {
+    margin-left: 10px;
 }

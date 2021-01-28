@@ -2,39 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Angelina Lum, Shreya Raj & Faiza Hussain">
+  <meta name="author" content="Created By: Angelina Lum, Shreya Raj & Faiza Hussain">
   <meta name="description" content="Project 1: Draft (Static Mock-Up)">
-  <title>Saftey Travel Website</title>
+  <title>Wander Travels</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main_style.css">
-  
-
+  <link rel="icon" 
+      type="image/png" 
+      href="img/travel-icon.png">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link" href="#">Home</a>
-        <a class="nav-item nav-link" href="#">About</a>
+  
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
+      <!--Logo-->
+      <a class="navbar-logo" href="index.html">
+        <img id="logo" src="img/travel-logo.png" alt="Website Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="#">Explore</a>
+          <a class="nav-item nav-link" href="#">About</a>
+        </div>
       </div>
-    </div>
-  </nav>
-
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="text-center text-white">Name of website</h1>
-      <div class="input-group searchbar">
-        <input type="text" class="form-control" placeholder="Search information here" aria-label="search">
-        <div class="input-group-append">
-          <button class="btn btnwhite" type="button">Search</button>
+    </nav>
+  
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="website-title text-center text-white">Explore Destinations</h1>
+        <div class="input-group searchbar">
+          <input type="text" class="form-control" placeholder="Search information here" aria-label="search">
+          <div class="input-group-append">
+            <button class="btn btnwhite" type="button">Search</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </header>
 
   <main>
     <div class="container">
@@ -62,7 +70,7 @@
                 </p>
                 <p class="category">
                   Average Cost for 7-day Solo Trip:
-                  <span class="price">$1,037</span>
+                  <span class="type price">$1,037</span>
                 </p>
               </div>
             
@@ -91,7 +99,7 @@
                 </p>
                 <p class="category">
                   Average Cost for 7-day Solo Trip:
-                  <span class="price">$985</span>
+                  <span class="type price">$985</span>
                 </p>
               </div>
             
@@ -120,7 +128,7 @@
                 </p>
                 <p class="category">
                   Average Cost for 7-day Solo Trip:
-                  <span class="price">$929</span>
+                  <span class="type price">$929</span>
                 </p>
               </div>
             
@@ -149,7 +157,7 @@
                 </p>
                 <p class="category">
                   Average Cost for 7-day Solo Trip:
-                  <span class="price">$1,058</span>
+                  <span class="type price">$1,058</span>
                 </p>
               </div>
             
@@ -179,7 +187,7 @@
                 </p>
                 <p class="category">
                   Average Cost for 7-day Solo Trip:
-                  <span class="price">$1,059</span>
+                  <span class="type price">$1,059</span>
                 </p>
               </div>
             
@@ -209,7 +217,7 @@
                 </p>
                 <p class="category">
                   Average Cost for 7-day Solo Trip:
-                  <span class="price">$1,544</span>
+                  <span class="type price">$1,544</span>
                 </p>
               </div>
             
@@ -221,7 +229,7 @@
   </main>
 
   <footer>  
-    <p>&copy; 2021 - Angelina, Shreya, Faiza.</p>
+    <p> Client Side Development &copy; 2021 Angelina Lum, Shreya Raj & Faiza Hussain.</p>
   </footer>
 
 </body>
