@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Created By: Angelina Lum, Shreya Raj & Faiza Hussain">
   <meta name="description" content="Project 1: Draft (Static Mock-Up)">
   <title>Wander Travels</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main_style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link rel="icon" 
-      type="image/png" 
-      href="img/travel-icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/travel-icon.png">
 </head>
 
 <body>
-  
+
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
       <!--Logo-->
       <a class="navbar-logo" href="index.html">
         <img id="logo" src="img/travel-logo.png" alt="Website Logo">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -32,18 +34,35 @@
         </div>
       </div>
     </nav>
-  
+
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="website-title">Explore Destinations</h1>
-        <div class="input-group searchbar">
+        <!-- <div class="input-group searchbar">
           <input type="text" class="form-control" placeholder="Search information here" aria-label="search">
           <div class="input-group-append">
             <button class="btn btnwhite" type="button">Search</button>
           </div>
+        </div> -->
+
+        <div class="form-group form-row align-items-center searchbar">
+          <div class="col-10">
+            <select id="inputCountry" class="form-control">
+              <option selected>Select Country...</option>
+              <option>Australia</option>
+              <option>Sweden</option>
+              <option>New Zealand</option>
+              <option>Italy</option>
+              <option>Netherlands</option>
+              <option>France</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <button class="btn btnwhite" type="button">Search</button>
+          </div>
         </div>
+
       </div>
-    </div>
   </header>
 
   <main>
@@ -53,116 +72,116 @@
         <!-- Card 1 -->
         <div class="col col-sm-12 col-md-6 col-xl-4 d-flex">
           <div class="card mb-4 shadow-sm">
-              
-              <img class="card-img" src="img/australia.jpg" alt="View of Sydney">
-              
-              <div class="card-body container">
-                  <div class="row">
-                    <h2 class="card-title">Australia</h2>
-                  </div>
-              </div>
 
-              <div class="hover-card">
-                <p class="category">
-                  Criminal Index: 
-                  <span class="type ci">42.44</span>
-                </p> 
-                  Saftey Index: 
-                  <span class="type si">57.56</span>
-                </p>
-                <p class="category">
-                  Average Cost for 7-day Solo Trip:
-                  <span class="type price">$1,037</span>
-                </p>
+            <img class="card-img" src="img/australia.jpg" alt="View of Sydney">
+
+            <div class="card-body container">
+              <div class="row">
+                <h2 class="card-title">Australia</h2>
               </div>
-            
+            </div>
+
+            <div class="hover-card">
+              <p class="category">
+                Criminal Index:
+                <span class="type ci">42.44</span>
+              </p>
+              Saftey Index:
+              <span class="type si">57.56</span>
+              </p>
+              <p class="category">
+                Average Cost for 7-day Solo Trip:
+                <span class="type price">$1,037</span>
+              </p>
+            </div>
+
           </div>
         </div>
 
         <!-- Card 2 -->
         <div class="col col-sm-12 col-md-6 col-xl-4 d-flex">
           <div class="card mb-4 shadow-sm">
-              
-              <img class="card-img" src="img/sweden.jpg" alt="General View of Sweden">
-              
-              <div class="card-body container">
-                  <div class="row">
-                    <h2 class="card-title">Sweden</h2>
-                  </div>
-              </div>
 
-              <div class="hover-card">
-                <p class="category">
-                  Criminal Index: 
-                  <span class="type ci">47.20</span>
-                </p> 
-                  Saftey Index: 
-                  <span class="type si">52.80</span>
-                </p>
-                <p class="category">
-                  Average Cost for 7-day Solo Trip:
-                  <span class="type price">$985</span>
-                </p>
+            <img class="card-img" src="img/sweden.jpg" alt="General View of Sweden">
+
+            <div class="card-body container">
+              <div class="row">
+                <h2 class="card-title">Sweden</h2>
               </div>
-            
+            </div>
+
+            <div class="hover-card">
+              <p class="category">
+                Criminal Index:
+                <span class="type ci">47.20</span>
+              </p>
+              Saftey Index:
+              <span class="type si">52.80</span>
+              </p>
+              <p class="category">
+                Average Cost for 7-day Solo Trip:
+                <span class="type price">$985</span>
+              </p>
+            </div>
+
           </div>
         </div>
 
         <!-- Card 3 -->
         <div class="col col-sm-12 col-md-6 col-xl-4 d-flex">
           <div class="card mb-4 shadow-sm">
-              
-              <img class="card-img" src="img/new_zealand.jpg" alt="New Zealand South Island">
-              
-              <div class="card-body container">
-                  <div class="row">
-                    <h2 class="card-title">New Zealand</h2>
-                  </div>
-              </div>
 
-              <div class="hover-card">
-                <p class="category">
-                  Criminal Index: 
-                  <span class="type ci">42.26</span>
-                </p> 
-                  Saftey Index: 
-                  <span class="type si">57.74</span>
-                </p>
-                <p class="category">
-                  Average Cost for 7-day Solo Trip:
-                  <span class="type price">$929</span>
-                </p>
+            <img class="card-img" src="img/new_zealand.jpg" alt="New Zealand South Island">
+
+            <div class="card-body container">
+              <div class="row">
+                <h2 class="card-title">New Zealand</h2>
               </div>
-            
+            </div>
+
+            <div class="hover-card">
+              <p class="category">
+                Criminal Index:
+                <span class="type ci">42.26</span>
+              </p>
+              Saftey Index:
+              <span class="type si">57.74</span>
+              </p>
+              <p class="category">
+                Average Cost for 7-day Solo Trip:
+                <span class="type price">$929</span>
+              </p>
+            </div>
+
           </div>
         </div>
 
         <!-- Card 4 -->
         <div class="col col-sm-12 col-md-6 col-xl-4 d-flex">
           <div class="card mb-4 shadow-sm">
-              
-              <img class="card-img" src="img/italy.jpg" alt="Seaside Town in Italy">
-              
-              <div class="card-body container">
-                  <div class="row">
-                    <h2 class="card-title">Italy</h2>
-                  </div>
-              </div>
 
-              <div class="hover-card">
-                <p class="category">
-                  Criminal Index: 
-                  <span class="type ci">44.37</span>
-                </p> 
-                  Saftey Index: 
-                  <span class="type si">55.63</span>
-                </p>
-                <p class="category">
-                  Average Cost for 7-day Solo Trip:
-                  <span class="type price">$1,058</span>
-                </p>
+            <img class="card-img" src="img/italy.jpg" alt="Seaside Town in Italy">
+
+            <div class="card-body container">
+              <div class="row">
+                <h2 class="card-title">Italy</h2>
               </div>
-            
+            </div>
+
+            <div class="hover-card">
+              <p class="category">
+                Criminal Index:
+                <span class="type ci">44.37</span>
+              </p>
+              Saftey Index:
+              <span class="type si">55.63</span>
+              </p>
+              <p class="category">
+                Average Cost for 7-day Solo Trip:
+                <span class="type price">$1,058</span>
+              </p>
+            </div>
+
           </div>
         </div>
 
@@ -170,29 +189,29 @@
         <!-- Card 5 -->
         <div class="col col-sm-12 col-md-6 col-xl-4 d-flex">
           <div class="card mb-4 shadow-sm">
-              
-              <img class="card-img" src="img/netherlands.jpg" alt="Riverside town in Netherlands">
-              
-              <div class="card-body container">
-                  <div class="row">
-                    <h2 class="card-title">Netherlands</h2>
-                  </div>
-              </div>
 
-              <div class="hover-card">
-                <p class="category">
-                  Criminal Index: 
-                  <span class="type ci">27.22</span>
-                </p> 
-                  Saftey Index: 
-                  <span class="type si">72.78</span>
-                </p>
-                <p class="category">
-                  Average Cost for 7-day Solo Trip:
-                  <span class="type price">$1,059</span>
-                </p>
+            <img class="card-img" src="img/netherlands.jpg" alt="Riverside town in Netherlands">
+
+            <div class="card-body container">
+              <div class="row">
+                <h2 class="card-title">Netherlands</h2>
               </div>
-            
+            </div>
+
+            <div class="hover-card">
+              <p class="category">
+                Criminal Index:
+                <span class="type ci">27.22</span>
+              </p>
+              Saftey Index:
+              <span class="type si">72.78</span>
+              </p>
+              <p class="category">
+                Average Cost for 7-day Solo Trip:
+                <span class="type price">$1,059</span>
+              </p>
+            </div>
+
           </div>
         </div>
 
@@ -200,29 +219,29 @@
         <!-- Card 6 -->
         <div class="col col-sm-12 col-md-6 col-xl-4 d-flex">
           <div class="card mb-4 shadow-sm">
-              
-              <img class="card-img" src="img/france.jpg" alt="Eiffel Tower in Paris">
-              
-              <div class="card-body container">
-                  <div class="row">
-                    <h2 class="card-title">France</h2>
-                  </div>
-              </div>
 
-              <div class="hover-card">
-                <p class="category">
-                  Criminal Index: 
-                  <span class="type ci">49.20</span>
-                </p> 
-                  Saftey Index: 
-                  <span class="type si">50.80</span>
-                </p>
-                <p class="category">
-                  Average Cost for 7-day Solo Trip:
-                  <span class="type price">$1,544</span>
-                </p>
+            <img class="card-img" src="img/france.jpg" alt="Eiffel Tower in Paris">
+
+            <div class="card-body container">
+              <div class="row">
+                <h2 class="card-title">France</h2>
               </div>
-            
+            </div>
+
+            <div class="hover-card">
+              <p class="category">
+                Criminal Index:
+                <span class="type ci">49.20</span>
+              </p>
+              Saftey Index:
+              <span class="type si">50.80</span>
+              </p>
+              <p class="category">
+                Average Cost for 7-day Solo Trip:
+                <span class="type price">$1,544</span>
+              </p>
+            </div>
+
           </div>
         </div>
 
@@ -230,9 +249,10 @@
     </div>
   </main>
 
-  <footer>  
+  <footer>
     <p> Client Side Development &copy; 2021 Angelina Lum, Shreya Raj & Faiza Hussain.</p>
   </footer>
 
 </body>
+
 </html>

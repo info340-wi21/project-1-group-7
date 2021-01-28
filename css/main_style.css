@@ -6,8 +6,8 @@
 }
 
 .btnwhite {
-    background-color: gray;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .searchbar {
@@ -70,4 +70,8 @@ img {
 footer {
     margin-left: 10px;
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #fcfafa;
 }
