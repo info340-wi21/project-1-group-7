@@ -21,6 +21,9 @@
 
 .website-title {
     margin-top: 40px;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    color: white;
 }
 
 .navbar-nav {
@@ -38,14 +41,16 @@ img {
 }
 .card-title {
     color: #416788; 
+    font-family: 'Roboto', sans-serif;
 }
 
 .card-title {
     padding-left: 10px;
 }
 .hover-card{
-    margin: auto;
+    font-family: 'Roboto', sans-serif;
     padding: 3em;
+    margin: auto;
     text-align: center;
     display: none;
 }
@@ -64,4 +69,5 @@ img {
 
 footer {
     margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
 }
