@@ -16,7 +16,7 @@
 
 .card-img {
     width: 100%;
-    border-radius: 10px;
+    height: 240px;
 }
 
 img {
@@ -25,4 +25,19 @@ img {
 }
 .card-title {
     color: #416788; 
+}
+
+.hover-card{
+    margin: auto;
+    padding: 3em;
+    text-align: center;
+    display: none;
+}
+
+.card-img:hover, .card-img:hover + .card-body{
+    display: none;
+}
+
+.card-img:hover ~ .hover-card{
+    display: block;
 }
