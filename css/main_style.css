@@ -42,11 +42,9 @@ img {
 .card-title {
     color: #416788; 
     font-family: 'Roboto', sans-serif;
-}
-
-.card-title {
     padding-left: 10px;
 }
+
 .hover-card{
     font-family: 'Roboto', sans-serif;
     padding: 3em;
