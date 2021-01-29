@@ -17,22 +17,59 @@
 </head>
 
 <body>
-    <h1>Australia</h1>
-    <h2 style="text-align:right">Emergency Number</h2>
-    <table>
-        <tbody>
-            <th>Attraction 1</th>
-            <tr>
-                <td>Great Barrier Reef Australia</td>
-                <td>The Great Barrier Reef is the world's largest coral reef system composed of over 2,900 individual
-                        reefs and 900 islands stretching for over 1,400 mi over an area of approximately 133,000 sq mi.
-                        The reef is located in the Coral Sea off the coast of Queensland Australia.
-                </td>
-                <!-- <td>Fee: $xxx</td> -->
-                <td><img src="img/australia-reef.jpg" alt="Australian coral Reef" height="200" align="Right"></td>
-            </tr>
-        </tbody>
-    </table>
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
+      <!--Logo-->
+      <a class="navbar-logo" href="index.html">
+        <img id="logo" src="img/travel-logo.png" alt="Website Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="#">Explore</a>
+          <a class="nav-item nav-link" href="#">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="website-title">Explore Destinations</h1>
+        <div class="input-group searchbar">
+          <input type="text" class="form-control" placeholder="Search information here" aria-label="search">
+          <div class="input-group-append">
+            <button class="btn btnwhite" type="button">Search</button>
+          </div>
+        </div>
+
+        <!-- <div class="form-group form-row align-items-center searchbar">
+          <div class="col-10">
+            <select id="inputCountry" class="form-control">
+              <option selected>Select Country...</option>
+              <option>Australia</option>
+              <option>Sweden</option>
+              <option>New Zealand</option>
+              <option>Italy</option>
+              <option>Netherlands</option>
+              <option>France</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <button class="btn btnwhite" type="button">Search</button>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </header>
+  <main>
+      <h1>Australia</h1>
+      <h2>Emergency Number</h2>
+  </main>
 </body>
 
 </html>
