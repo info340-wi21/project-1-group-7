@@ -77,3 +77,41 @@ body {
 .sortbar {
     margin-top: 3%;
 }
+
+table{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+th{
+    height: 2rem;
+    text-align: left;
+    padding: .5em;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+tr {
+    padding-bottom: 10px;
+}
+
+td{
+    padding: .5em;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.button {
+    line-height: 1;
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px;
+    background-color: darken($subtle,5%);
+  }
+
+tbody tr:hover{
+    background-color: lightgrey;
+}
