@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 .jumbotron {
     background-color: #416788;
 }
@@ -65,24 +66,32 @@ img {
     color: #6E8387; 
 }
 
-footer {
-    margin-left: 10px;
-    font-family: 'Roboto', sans-serif;
-}
-
 body {
     background-color: #fcfafa;
 }
+
+footer {
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    bottom: fixed;
+}
+
+/* Tourism/Table CSS */
 
 .sortbar {
     margin-top: 3%;
 }
 
 table{
-    width: 70%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
-    border-collapse: collapse;
+    background-color: #f8fafc;
+    border-collapse: separate;
+    border: solid #bfccd4 1px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    margin-bottom: 8px;
 }
 
 th{
@@ -96,37 +105,31 @@ tr {
     padding-bottom: 10px;
 }
 
-td{
-    padding: .5em;
-    border-bottom: 1px solid #d3d3d3;
+.tr-att {
+    width: 200px;
 }
 
-.button {
+.tr-price {
+    width: 100px;
+}
+
+td{
+    padding: .5em;
+}
+
+.add {
     line-height: 1;
     display: inline-block;
     font-size: 1.2rem;
-    text-decoration: none;
-    border-radius: 5px;
+    border-radius: 3px;
+    border-color: #d3d3d3;
     color: #fff;
     padding: 8px;
-    background-color: darken($subtle,5%);
+    background-color: #A4B8C4;
   }
 
 tbody tr:hover{
-    background-color: lightgrey;
-}
-
-
-.imageAbout {
-    margin: 0px 15px 15px 0px;
-    object-fit: cover;
-    width: 700px;
-    height: 700px;
-}
-
-.rightPadding{
-    padding-right: 5%;
-    padding-left: 15%;
+    background-color: lightgray;
 }
 
 /* Landing CSS */ 
