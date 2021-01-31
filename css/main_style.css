@@ -115,3 +115,16 @@ td{
 tbody tr:hover{
     background-color: lightgrey;
 }
+
+
+.imageAbout {
+    margin: 0px 15px 15px 0px;
+    object-fit: cover;
+    width: 700px;
+    height: 700px;
+}
+
+.rightPadding{
+    padding-right: 5%;
+    padding-left: 15%;
+}
