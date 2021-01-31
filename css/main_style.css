@@ -128,3 +128,40 @@ tbody tr:hover{
     padding-right: 5%;
     padding-left: 15%;
 }
+
+/* Landing CSS */ 
+
+.about-img {
+    background-repeat: no-repeat;
+    width: 50%;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+ }
+ 
+.about-right {
+    background-color: #416788;
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+ }
+
+ .about-text {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+ }
+ 
+ .about-why {
+     font-style: italic;
+     text-align: center; 
+     color: #c8d3d5;
+     letter-spacing: 0.3em;
+ }
+
+ .about-ex {
+     margin-left: 20px;
+     margin-right: 20px;
+     color: white;
+ }
