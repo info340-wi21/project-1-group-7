@@ -165,15 +165,15 @@ only screen and (max-width: 760px),
 
 .about-img {
     background-repeat: no-repeat;
-    width: 50%;
-    position: absolute;
+    width: 100%;
     left: 0px;
-    height: 100%;
+    padding-right: 0;
+    height:min-content; 
  }
  
 .about-right {
     background-color: #416788;
-    width: 50%;
+    width: 100%;
     position: absolute;
     right: 0px;
     height: 100%;
@@ -197,3 +197,9 @@ only screen and (max-width: 760px),
      margin-right: 20px;
      color: white;
  }
+
+ @media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+}
