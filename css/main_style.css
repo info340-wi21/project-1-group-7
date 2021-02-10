@@ -117,19 +117,48 @@ td{
     padding: .5em;
 }
 
-.add {
-    line-height: 1;
-    display: inline-block;
-    font-size: 1.2rem;
-    border-radius: 3px;
-    border-color: #d3d3d3;
-    color: #fff;
-    padding: 8px;
-    background-color: #A4B8C4;
-  }
-
 tbody tr:hover{
     background-color: lightgray;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    tr  { 
+        border: 1px solid lightgray; 
+    }
+
+    thead tr {
+        position: absolute;
+        top: -999px;
+        left: -9999px; 
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 10%; 
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: lightgray;
+    }
+ 
 }
 
 /* Landing CSS */ 
