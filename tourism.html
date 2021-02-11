@@ -43,8 +43,8 @@
         
         <div class="form-group form-row align-items-center searchbar">
           <div class="col-10">
-            <select id="inputCountry" class="form-control">
-              <option selected>Select Country...</option>
+            <select id="attractionList" class="form-control">
+              <option value="nothing" selected id="selectedNone" >Select Country...</option>
               <option>Australia</option>
               <option>Sweden</option>
               <option>New Zealand</option>
@@ -54,16 +54,16 @@
             </select>
           </div>
           <div class="col-2">
-            <button class="btn btnwhite" type="button">Search</button>
+            <button class="btn btnwhite" type="button" onclick="searchFunction()" >Search</button>
           </div>
-        </div>
-  
+        </div> 
+
       </div>
     </div>
   </header>
   
   <main>
-      <table>
+      <table id="attractionsTable" >
         <thead>
           <tr>
             <th class="tr-loc">Location</th>
@@ -233,27 +233,32 @@
           <!-- France Tourist Attractions -->
           <tr>
             <td>France</td>
-            <td class="tr-att">A</td>
+            <td class="tr-att"> Eiffel Tower</td>
             <td>
-              The
+              The structure of Eiffel tower is of 8,000 metallic parts. It was designed by Gustave Eiffel as a temporary exhibit for the World Fair of 1889.
+              Tower is 320-meter-high and now a beloved and irreplaceable fixture of the Paris skyline. The Eiffel Tower's gracefulness has earned it the nickname of "Iron Lady."
             </td>
-            <td class="tr-price">$</td>
+            <td class="tr-price">$31.36</td>
           </tr>
           <tr>
             <td>France</td>
-            <td class="tr-att">A</td>
+            <td class="tr-att"> Louvre Museum</td>
             <td>
-              The
+              The Louvre ranks among the top European collections of fine arts. Many of Western Civilization's most famous works are found here, 
+              including the Mona Lisa by Leonardo DaVinci, the Wedding Feast at Cana by Veronese, and the 1st-century-BC Venus de Milo sculpture.
+
             </td>
-            <td class="tr-price">$</td>
+            <td class="tr-price">$18.09</td>
           </tr>
           <tr>
             <td>France</td>
-            <td class="tr-att">A</td>
-            <td>
-              The 
+            <td class="tr-att">Palace of Versailles
             </td>
-            <td class="tr-price">$</td>
+            <td>
+              More than just a royal residence, Versailles was designed to show off the glory of the French monarchy. "Sun King" Louis XIV transformed his father's small hunting lodge into an opulent palace with a sumptuous Baroque interior.
+               The palace became Louis XIV's symbol of absolute power and set the standard for princely courts in Europe.
+            </td>
+            <td class="tr-price">$21.71</td>
           </tr>
         </tbody>
       </table>
@@ -263,5 +268,7 @@
     <p> Client Side Development &copy; 2021 Angelina Lum, Shreya Raj & Faiza Hussain.</p>
   </footer>
 </body>
+
+<script src="./js/search.js"></script>
 
 </html>
