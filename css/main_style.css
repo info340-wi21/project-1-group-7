@@ -70,6 +70,10 @@ body {
     background-color: #fcfafa;
 }
 
+#resetAll {
+    margin-left: 10%;
+}
+
 footer {
     margin-left: 10px;
     font-family: 'Roboto', sans-serif;
