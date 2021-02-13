@@ -17,7 +17,49 @@
 
 #logo {
     width: 8em;
-    margin-left: 50px;
+    margin-left: 10%;
+}
+ 
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50%;
+    list-style-type: none;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.nav-ul li a {
+    display: inline-block; 
+    color: grey;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-ul li a:hover {
+    color: #416788;
+}
+
+.hamburger {
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+    background-size: 100%;
+    display: none;
+}
+
+.showClose {
+    background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+    background-color: #416788;
 }
 
 .website-title {
@@ -25,10 +67,6 @@
     font-family: 'Merriweather Sans', sans-serif;
     text-align: center;
     color: white;
-}
-
-.navbar-nav {
-    margin-right: 50px;
 }
 
 .card-img {
@@ -125,46 +163,6 @@ tbody tr:hover{
     background-color: lightgray;
 }
 
-@media 
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px) {
-
-    table, thead, tbody, th, td, tr {
-        display: block;
-    }
-
-    tr  { 
-        border: 1px solid lightgray; 
-    }
-
-    thead tr {
-        position: absolute;
-        top: -999px;
-        left: -9999px; 
-    }
-
-    td {
-        border: none;
-        border-bottom: 1px solid #eee;
-        position: relative;
-        padding-left: 10%; 
-    }
-
-    td:before {
-        position: absolute;
-        top: 6px;
-        left: 6px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
-    }
-
-    tbody tr:nth-child(odd) {
-        background-color: lightgray;
-    }
- 
-}
-
 /* Landing CSS */ 
 
 .about-img {
@@ -202,20 +200,77 @@ only screen and (max-width: 760px),
      color: white;
  }
 
- @media 
+@media 
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px) {
+    
+    /* media for table */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    tr  { 
+        border: 1px solid lightgray; 
+    }
+
+    thead tr {
+        position: absolute;
+        top: -999px;
+        left: -9999px; 
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 10%; 
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: lightgray;
+    }
+
+    /* media for landing */
     .about-img {
         background-repeat: no-repeat;
         width: 100%;
         position: absolute;
-        height: 50%;
+        height: auto;
+        z-index: 999;
      }
      
     .about-right {
-        margin-top: 50%;
+        margin-top: 80%;
         background-color: #416788;
         width: 100%;
         height: fit-content;
+     }
+
+     /* hamburger menu */
+     .nav-ul {
+         display: none;
+         width: 100%;
+         flex-direction: column;
+     }
+
+     .nav-ul.show {
+         display: flex;
+     }
+
+     .hamburger {
+         display: block;
+     }
+
+     .nav-ul li a {
+         font-size: 16px;
      }
 }

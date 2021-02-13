@@ -149,15 +149,18 @@ resetCardsDisplayed();
 
 
 // search feature 
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 document.querySelector('#textSearch')
         .addEventListener('click', function(){
             let data = getData();
             let userInput = document.querySelector('#inputVal').value;
+            userInput = capitalizeFirstLetter(userInput);
             let filteredData = data.filter(countryInfo => countryInfo.name.includes(userInput));
             renderDataCards(filteredData);
         });
-
-
 
 // sort alphabetically 
 function dynamicSort(property) {
@@ -199,7 +202,6 @@ function priceFilter(){
     return sortedData;
 }
 
-
 //sort data by the different filters clicked 
 document.querySelector('#inputSort')
         .addEventListener('change', (event) => {
@@ -215,11 +217,17 @@ document.querySelector('#inputSort')
             }
         });
 
-
-
-
 // reset button 
 document.querySelector('#resetAll')
         .addEventListener('click', function(){
             resetCardsDisplayed();
         });
+
+// hamburger menu 
+const hamburger = document.getElementById("hamburger");
+const navUL = document.getElementById("nav-ul");
+
+hamburger.addEventListener("click", function() {
+    navUL.classList.toggle("show");
+    hamburger.classList.toggle("showClose");
+})
