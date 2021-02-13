@@ -1,4 +1,11 @@
 'use strict';
+
+// const toggleButn = document.getElementsByClassName('navbar-toggler')[0]
+// const navLinks = document.getElementsByClassName('nav-links')[0]
+
+// toggleButn.addEventListener('click', () => {
+//     navLinks.classList.toggle('active')
+// })
       
 let searchCountry = document.querySelector('button');
 searchCountry.addEventListener('click', searchFunction);
@@ -20,6 +27,14 @@ function searchFunction() {
         }
     }
 }
+
+/*var toggle = document.getElementsByClassName("navbar-toggler")[0];
+var menu = document.getElementById("#menu");
+
+toggle.onclick = function(){
+    var hidden = menu.style.visibility === "hidden";
+    menu.style.visibility = hidden ? "visible" : "hidden";
+};*/
 
 //Needed for JEST to pass
 // console.log(searchFunction())*/
