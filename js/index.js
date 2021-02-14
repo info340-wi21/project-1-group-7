@@ -160,6 +160,10 @@ document.querySelector('#textSearch')
             userInput = capitalizeFirstLetter(userInput);
             let filteredData = data.filter(countryInfo => countryInfo.name.includes(userInput));
             renderDataCards(filteredData);
+        
+            if (filteredData.length === 0) {
+                renderError(new Error("No results found"));
+            }
         });
 
 // sort alphabetically 
@@ -231,3 +235,13 @@ hamburger.addEventListener("click", function() {
     navUL.classList.toggle("show");
     hamburger.classList.toggle("showClose");
 })
+
+// error handling 
+function renderError(error) {
+    let message = document.createElement('p');
+    message.classList.add('alert');
+    message.classList.add('alert-danger'); 
+    message.textContent = error.message; 
+  
+    document.querySelector('#mainBody').appendChild(message); 
+}
