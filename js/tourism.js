@@ -28,6 +28,8 @@ function searchFunction() {
     }
 }
 
+// Code referenced from stackoverflow
+
 /*var toggle = document.getElementsByClassName("navbar-toggler")[0];
 var menu = document.getElementById("#menu");
 
