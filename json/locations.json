@@ -1,0 +1,56 @@
+{
+  "australia": {
+    "image": "australia.jpg",
+    "alt": "View of Sydney",
+    "name": "Australia",
+    "criminalIndex": 42.44,
+    "safteyIndex": 57.56,
+    "price": "$1,037",
+    "priceNum": 1037
+  },
+  "sweden": {
+    "image": "sweden.jpg",
+    "alt": "General View of Sweden",
+    "name": "Sweden",
+    "criminalIndex": 47.20,
+    "safteyIndex": 52.80,
+    "price": "$985",
+    "priceNum": 985
+  },
+  "new zealand": {
+    "image": "new_zealand.jpg",
+    "alt": "New Zealand South Island",
+    "name": "New Zealand",
+    "criminalIndex": 42.26,
+    "safteyIndex": 57.74,
+    "price": "$929",
+    "priceNum": 929
+  },
+  "italy": {
+    "image": "italy.jpg",
+    "alt": "Seaside Town in Italy",
+    "name": "Italy",
+    "criminalIndex": 44.37,
+    "safteyIndex": 55.63,
+    "price": "$1,058",
+    "priceNum": 1058
+  },
+  "netherlands": {
+    "image": "netherlands.jpg",
+    "alt": "Riverside town in Netherlands",
+    "name": "Netherlands",
+    "criminalIndex": 27.22,
+    "safteyIndex": 72.78,
+    "price": "$1,059",
+    "priceNum": 1059
+  },
+  "france": {
+    "image": "france.jpg",
+    "alt": "Eiffel Tower in Paris",
+    "name": "France",
+    "criminalIndex": 49.20,
+    "safteyIndex": 50.80,
+    "price": "$1,544",
+    "priceNum": 1544
+  }
+}

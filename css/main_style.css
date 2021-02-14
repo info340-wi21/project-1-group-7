@@ -17,14 +17,14 @@
 
 #logo {
     width: 8em;
-    margin-left: 10%;
+    margin-left: 30%;
 }
  
 .nav-ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 50%;
+    margin-left: 65%;
     list-style-type: none;
     margin-top: 15px;
     margin-bottom: 0;
@@ -188,16 +188,16 @@ tbody tr:hover{
  }
  
  .about-why {
-     font-style: italic;
-     text-align: center; 
-     color: #c8d3d5;
-     letter-spacing: 0.3em;
+    font-style: italic;
+    text-align: center; 
+    color: #c8d3d5;
+    letter-spacing: 0.3em;
  }
 
  .about-ex {
-     margin-left: 20px;
-     margin-right: 20px;
-     color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
  }
 
 @media 
