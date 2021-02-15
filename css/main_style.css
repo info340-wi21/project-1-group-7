@@ -182,7 +182,7 @@ tbody tr:hover{
  }
 
  .about-text {
-    margin-top: 100px;
+    margin-top: 80px;
     text-align: center;
     color: white;
  }
@@ -190,7 +190,7 @@ tbody tr:hover{
  .about-why {
     font-style: italic;
     text-align: center; 
-    color: #c8d3d5;
+    color: #b6dff8;
     letter-spacing: 0.3em;
  }
 
@@ -198,6 +198,10 @@ tbody tr:hover{
     margin-left: 20px;
     margin-right: 20px;
     color: white;
+ }
+
+ .about-ex b {
+     color: #b6dff8;
  }
 
 @media 
