@@ -1,4 +1,5 @@
 'use strict';
+let currentData = [];
 
 function renderDataCards(data){
     let mainBody = document.querySelector('#mainBody');
@@ -80,70 +81,17 @@ function renderEachCard(data){
 
 // function is storing all the data for each of the countries 
 // storing the data that goes on each card 
-function getData() {
-    return [
-        {
-            "image": "australia.jpg",
-            "alt": "View of Sydney",
-            "name": "Australia",
-            "criminalIndex": 42.44,
-            "safteyIndex": 57.56,
-            "price": "$1,037",
-            "priceNum": 1037
-        },
-        {
-            "image": "sweden.jpg",
-            "alt": "General View of Sweden",
-            "name": "Sweden",
-            "criminalIndex": 47.20,
-            "safteyIndex": 52.80,
-            "price": "$985",
-            "priceNum": 985
-        },
-        {
-            "image": "new_zealand.jpg",
-            "alt": "New Zealand South Island",
-            "name": "New Zealand",
-            "criminalIndex": 42.26,
-            "safteyIndex": 57.74,
-            "price": "$929",
-            "priceNum": 929
-        },
-        {
-            "image": "italy.jpg",
-            "alt": "Seaside Town in Italy",
-            "name": "Italy",
-            "criminalIndex": 44.37,
-            "safteyIndex": 55.63,
-            "price": "$1,058",
-            "priceNum": 1058
-        },
-        {
-            "image": "netherlands.jpg",
-            "alt": "Riverside town in Netherlands",
-            "name": "Netherlands",
-            "criminalIndex": 27.22,
-            "safteyIndex": 72.78,
-            "price": "$1,059",
-            "priceNum": 1059
-        },
-        {
-            "image": "france.jpg",
-            "alt": "Eiffel Tower in Paris",
-            "name": "France",
-            "criminalIndex": 49.20,
-            "safteyIndex": 50.80,
-            "price": "$1,544",
-            "priceNum": 1544
-        }
-    ];
-}
+fetch('data/countries.json')
+    .then(function(res) { return res.json() })
+    .then(function(data) {
+        currentData = data;
+    renderDataCards(currentData);
+    })
+
 
 function resetCardsDisplayed(){
-    const data = getData();
-    renderDataCards(data);
+    renderDataCards(currentData);
 }
-
 
 resetCardsDisplayed();
 
@@ -155,7 +103,7 @@ function capitalizeFirstLetter(string) {
 
 document.querySelector('#textSearch')
         .addEventListener('click', function(){
-            let data = getData();
+            let data = currentData;
             let userInput = document.querySelector('#inputVal').value;
             userInput = capitalizeFirstLetter(userInput);
             let filteredData = data.filter(countryInfo => countryInfo.name.includes(userInput));
@@ -187,21 +135,21 @@ function dynamicSort(property) {
 
 // sorts criminalIndexs in data array from lowest to highest
 function criminalIndexFilter(){
-    let data = getData();
+    let data = currentData;
     let sortedData = data.sort((a, b) =>  parseFloat(a.criminalIndex) - parseFloat(b.criminalIndex));
     return sortedData;
 }
 
 // sorts safteyIndex in data array from highest to lowest 
 function safteyIndexFilter(){
-    let data = getData();
+    let data = currentData;
     let sortedData = data.sort((a, b) => parseFloat(b.safteyIndex) - parseFloat(a.safteyIndex));
     return sortedData;
 }
 
 // sorts prices in data array from lowest to highest
 function priceFilter(){
-    let data = getData();
+    let data = currentData;
     let sortedData = data.sort((a, b) =>  parseFloat(a.priceNum) - parseFloat(b.priceNum));
     return sortedData;
 }
@@ -210,7 +158,7 @@ function priceFilter(){
 document.querySelector('#inputSort')
         .addEventListener('change', (event) => {
             if (event.target.value === "sortName"){
-                let sortedData = getData().sort(dynamicSort("name"));
+                let sortedData = currentData.sort(dynamicSort("name"));
                 renderDataCards(sortedData);
             } else if (event.target.value === 'sortCrime'){
                 renderDataCards(criminalIndexFilter());
@@ -245,3 +193,4 @@ function renderError(error) {
   
     document.querySelector('#mainBody').appendChild(message); 
 }
+
