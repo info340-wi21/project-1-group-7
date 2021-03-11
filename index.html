@@ -24,9 +24,11 @@
       <a href="index.html">
         <img id="logo" href="index.html" src="img/travel-logo.png" alt="Website Logo">
       </a>
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
+      <form method="post">
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </form>
       <ul class="nav-ul" id="nav-ul">
         <li><a class="nav-item nav-link" href="index.html">Explore</a></li>
         <li><a class="nav-item nav-link" href="tourism.html">Tourism</a></li>
@@ -40,11 +42,15 @@
         <h1 class="website-title">Explore Destinations</h1>
         <div class="form-group form-row searchbar">
           <div class="col-10">
-            <input type="text" id="inputVal" class="form-control" placeholder="Search for Destination..." aria-label="search">
+            <form method="post">
+              <input type="text" id="inputVal" class="form-control" placeholder="Search for Destination..." aria-label="search">
+            </form>
           </div>
           <div class="col-2">
             <div class="input-group-append">
-              <button class="btn btnwhite" id="textSearch" type="button">Search</button>
+              <form method="post">
+                <button class="btn btnwhite" id="textSearch" type="button">Search</button>
+              </form>
             </div>
           </div>
         </div>
@@ -53,19 +59,23 @@
         <div class="row justify-content-center sortbar">
           <div class="form-group form-row">
             <div class="">
-              <select id="inputSort" class="form-control">
-                <option selected>Sort by...</option>
-                <option value="sortName">A-Z Country</option>
-                <option value="sortCrime">Lowest Criminal Index</option>
-                <option value="sortSaftey">Highest Saftey Index</option>
-                <option value="sortPrice">Lowest Cost</option>
-              </select>
+              <form method="post"> 
+                <select id="inputSort" class="form-control">
+                  <option selected>Sort by...</option>
+                  <option value="sortName">A-Z Country</option>
+                  <option value="sortCrime">Lowest Criminal Index</option>
+                  <option value="sortSaftey">Highest Saftey Index</option>
+                  <option value="sortPrice">Lowest Cost</option>
+                </select>
+              </form>
             </div>
           </div>
 
           <!--Clears Sort/Filters and reverts to orginal data-->
           <div class="dropdown">
-            <input id="resetAll" class="btn btn-primary" type="reset" value="Reset">
+            <form method="post">
+              <input id="resetAll" class="btn btn-primary" type="reset" value="Reset">
+            </form>
         </div>
       </div>
 
@@ -79,7 +89,6 @@
   <main>
     <div class="container">
       <div id="mainBody" class="row">
-
       </div>
     </div>
   </main>

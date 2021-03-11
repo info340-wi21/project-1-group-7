@@ -23,9 +23,11 @@
       <a href="index.html">
         <img id="logo" href="index.html" src="img/travel-logo.png" alt="Website Logo">
       </a>
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
+      <form method="post">
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </form>
       <ul class="nav-ul" id="nav-ul">
         <li><a class="nav-item nav-link" href="index.html">Explore</a></li>
         <li><a class="nav-item nav-link" href="tourism.html">Tourism</a></li>
@@ -38,19 +40,23 @@
         <h1 class="website-title">Tourist Attractions</h1>
         <div class="form-group form-row align-items-center searchbar">
           <div class="col-10">
-            <select id="attractionList" class="form-control">
-              <!-- <option value="nothing" selected id="selectedNone" >Select Country...</option> -->
-              <option selected>Select a Destination...</option>
-              <option>Australia</option>
-              <option>Sweden</option>
-              <option>New Zealand</option>
-              <option>Italy</option>
-              <option>Netherlands</option>
-              <option>France</option>
-            </select>
+            <form method="post">
+              <select id="attractionList" class="form-control">
+                <!-- <option value="nothing" selected id="selectedNone" >Select Country...</option> -->
+                <option selected>Select a Destination...</option>
+                <option>Australia</option>
+                <option>Sweden</option>
+                <option>New Zealand</option>
+                <option>Italy</option>
+                <option>Netherlands</option>
+                <option>France</option>
+              </select>
+            </form>
           </div>
           <div class="col-2">
-            <button class="btn btnwhite" type="button" onclick="searchFunction()" >Search</button>
+            <form method="post">
+              <button class="btn btnwhite" type="button" onclick="searchFunction()" >Search</button>
+            </form>
           </div>
         </div> 
       </div>
